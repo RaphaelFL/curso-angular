@@ -1,0 +1,18 @@
+<div class="claas">
+  <h2>Produtos:</h2>
+  <br>
+  <ul>
+    <li *ngFor="let product of products">
+      Name: {{product.name}} / - / Price: $ {{product.price}}
+      <br>
+      <button (click)="showType(product)"> Show type </button> / - /
+      <button (click)="removeProduct(product)"> Remover Produto </button>
+    </li>
+    <li *ngFor="let animal of animais">
+      Name: {{animal.name}} / - / Type: {{animal.type}}
+      <br>
+    </li>
+  </ul>
+  <br>
+  <h3>{{produtoType}}</h3>
+</div>
