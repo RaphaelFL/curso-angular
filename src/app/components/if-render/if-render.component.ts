@@ -1,11 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-id-render',
-  templateUrl: './id-render.component.html',
-  styleUrls: ['./id-render.component.scss']
+  selector: 'app-if-render',
+  templateUrl: './if-render.component.html',
+  styleUrls: ['./if-render.component.scss']
 })
-export class IdRenderComponent implements OnInit {
+export class IfRenderComponent implements OnInit {
   canShow = true;
   @Input() nameIf!: string;
   constructor() { }

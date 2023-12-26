@@ -1,10 +1,9 @@
 <div class="class">
   <div *ngIf="canShow"> teste de visão</div>
-  <h5 *ngIf="nameIf === 'Joaqui'; else nameNotFound"> teste de User</h5>
+  <h5 *ngIf="nameIf === 'Joaquim'; else nameNotFound"> teste de User</h5>
   <ng-template #nameNotFound>
     <div>
       <h5>Nome não encontrado</h5>
     </div>
   </ng-template>
-
 </div>
