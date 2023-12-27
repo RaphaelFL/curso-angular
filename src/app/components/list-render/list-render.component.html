@@ -9,8 +9,9 @@
       <button (click)="removeProduct(product)"> Remover Produto </button>
     </li>
     <li *ngFor="let animal of animais">
-      Name: {{animal.name}} / - / Type: {{animal.type}}
+      Name: <a routerLink="/list/{{animal.id}}"></a> {{animal.name}} / - / Type: {{animal.type}}
       <br>
+      <button (click)="removeAnimal(animal)"> Remover Produto </button>
     </li>
   </ul>
   <br>

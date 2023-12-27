@@ -14,8 +14,15 @@ export class ListService {
   remove(products: Produtos[], product: Produtos) {
     return products.filter((item) => product.name !== item.name);
   }
+  removeAnimal(id: number) {
+    return this.http.delete<Animal>(`${this.apiUrl}/${id}`);
+  }
 
   getAll(): Observable<Animal[]>{
     return this.http.get<Animal[]>(this.apiUrl);
+  }
+
+  getItem(id: number): Observable<Animal>{
+    return this.http.get<Animal>(`${this.apiUrl}/${id}`)
   }
 }

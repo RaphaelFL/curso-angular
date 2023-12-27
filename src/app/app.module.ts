@@ -15,6 +15,7 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
 import { PipesComponent } from './components/pipes/pipes.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 import { IfRenderComponent } from './components/if-render/if-render.component';
+import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { IfRenderComponent } from './components/if-render/if-render.component';
     ListRenderComponent,
     PipesComponent,
     TwoWayBindingComponent,
-    IfRenderComponent
+    IfRenderComponent,
+    ItemDetailComponent
   ],
   imports: [
     BrowserModule,
